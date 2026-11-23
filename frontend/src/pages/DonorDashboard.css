@@ -1,0 +1,666 @@
+.donor-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f7f8fc;
+}
+
+.donor-sidebar {
+  width: 255px;
+  background: #fff;
+  border-right: 1px solid #eceef2;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.dashboard-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px 35px;
+  color: #c62828;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.sidebar-label {
+  color: #a0a6b2;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  padding: 0 12px 15px;
+}
+
+.sidebar-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.sidebar-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 14px;
+  border: none;
+  background: transparent;
+  border-radius: 9px;
+  color: #697386;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: #fff0f0;
+  color: #c62828;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.sidebar-help {
+  background: #fff1f1;
+  padding: 17px;
+  border-radius: 12px;
+  color: #c62828;
+  margin: 25px 0;
+}
+
+.sidebar-help strong {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 13px;
+}
+
+.sidebar-help p {
+  color: #8b6666;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.logout-link {
+  color: #c62828;
+}
+
+.donor-main {
+  flex: 1;
+  min-width: 0;
+  padding: 0 35px;
+}
+
+.dashboard-header {
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #eceef2;
+}
+
+.dashboard-header h2 {
+  font-size: 19px;
+  color: #172033;
+}
+
+.dashboard-header p {
+  font-size: 12px;
+  color: #87909f;
+  margin-top: 5px;
+}
+
+.header-right,
+.header-profile {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  gap: 25px;
+}
+
+.notification-btn {
+  position: relative;
+  background: white;
+  color: #667085;
+  padding: 8px;
+}
+
+.notification-btn span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c62828;
+}
+
+.header-profile {
+  gap: 10px;
+}
+
+.profile-avatar,
+.large-avatar {
+  display: grid;
+  place-items: center;
+  background: #c62828;
+  color: white;
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+}
+
+.header-profile strong,
+.header-profile small {
+  display: block;
+}
+
+.header-profile strong {
+  font-size: 13px;
+}
+
+.header-profile small {
+  color: #929aaa;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.donor-welcome {
+  margin: 28px 0;
+  padding: 30px 35px;
+  background: linear-gradient(110deg, #a91e28, #d32f35);
+  border-radius: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.donor-welcome > div:first-child > span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #fecaca;
+  font-weight: 800;
+}
+
+.donor-welcome h1 {
+  font-size: 27px;
+  margin: 12px 0;
+}
+
+.donor-welcome p {
+  color: #ffe1e1;
+  font-size: 13px;
+  line-height: 1.7;
+  max-width: 530px;
+}
+
+.welcome-blood-icon {
+  width: 115px;
+  height: 115px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffffff20;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.donor-profile-strip {
+  padding: 22px;
+  border: 1px solid #eceef2;
+  background: white;
+  border-radius: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.donor-profile-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.large-avatar {
+  width: 62px;
+  height: 62px;
+  font-size: 25px;
+}
+
+.donor-profile-info h3 {
+  font-size: 16px;
+}
+
+.donor-profile-info p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #929aaa;
+  font-size: 12px;
+  margin: 7px 0;
+}
+
+.donor-blood-type {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.availability-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.availability-box strong {
+  font-size: 13px;
+}
+
+.availability-box p {
+  color: #929aaa;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.availability-toggle {
+  width: 49px;
+  height: 27px;
+  border: none;
+  border-radius: 30px;
+  background: #cbd0d9;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.availability-toggle span {
+  width: 21px;
+  height: 21px;
+  display: block;
+  border-radius: 50%;
+  background: white;
+  transition: 0.2s;
+}
+
+.availability-toggle.is-on {
+  background: #16a34a;
+}
+
+.availability-toggle.is-on span {
+  transform: translateX(22px);
+}
+
+.donor-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 17px;
+  margin: 25px 0 35px;
+}
+
+.donor-stat-card {
+  background: white;
+  border: 1px solid #eceef2;
+  border-radius: 12px;
+  padding: 19px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.red-stat {
+  color: #c62828;
+  background: #fee2e2;
+}
+
+.blue-stat {
+  color: #2563eb;
+  background: #dbeafe;
+}
+
+.green-stat {
+  color: #15803d;
+  background: #dcfce7;
+}
+
+.orange-stat {
+  color: #c2410c;
+  background: #ffedd5;
+}
+
+.donor-stat-card p {
+  font-size: 11px;
+  color: #8992a1;
+}
+
+.donor-stat-card h2 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.donor-stat-card small {
+  font-size: 10px;
+  color: #a1a8b4;
+}
+
+.dashboard-section {
+  margin-bottom: 35px;
+}
+
+.section-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.section-title-row h2 {
+  font-size: 18px;
+}
+
+.section-title-row p {
+  color: #929aaa;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.view-all-btn {
+  background: white;
+  border: 1px solid #e5e7eb;
+  color: #c62828;
+  font-size: 12px;
+}
+
+.request-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.donor-request-card {
+  background: white;
+  border: 1px solid #eceef2;
+  border-radius: 12px;
+  padding: 19px;
+  transition: 0.2s;
+}
+
+.donor-request-card:hover {
+  border-color: #e5aaaa;
+  box-shadow: 0 8px 25px #c6282810;
+  transform: translateY(-3px);
+}
+
+.request-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.request-blood {
+  color: #c62828;
+  background: #fee2e2;
+  padding: 8px 11px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.urgency {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 6px 9px;
+  border-radius: 20px;
+}
+
+.critical {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.urgent {
+  color: #c2410c;
+  background: #ffedd5;
+}
+
+.normal {
+  color: #15803d;
+  background: #dcfce7;
+}
+
+.donor-request-card h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.request-location {
+  color: #929aaa;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.request-details {
+  border-top: 1px solid #f0f0f0;
+  margin-top: 17px;
+  padding-top: 13px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 10px;
+  color: #87909f;
+}
+
+.respond-btn {
+  width: 100%;
+  margin-top: 17px;
+  background: #fff0f0;
+  color: #c62828;
+  padding: 11px;
+  font-size: 12px;
+}
+
+.respond-btn:hover {
+  background: #c62828;
+  color: white;
+}
+
+.activity-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #eceef2;
+  border-radius: 12px;
+}
+
+.activity-icon {
+  width: 43px;
+  height: 43px;
+  background: #fee2e2;
+  color: #c62828;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+}
+
+.activity-info {
+  flex: 1;
+}
+
+.activity-info strong {
+  font-size: 13px;
+}
+
+.activity-info p {
+  font-size: 11px;
+  color: #929aaa;
+  margin-top: 5px;
+}
+
+.activity-date {
+  font-size: 11px;
+  color: #87909f;
+}
+
+.verified-status {
+  background: #fff0f0;
+  color: #b91c1c;
+  padding: 7px 10px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.dashboard-footer {
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid #eceef2;
+  color: #929aaa;
+  font-size: 11px;
+}
+
+.mobile-menu,
+.mobile-close {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .donor-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .request-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .donor-sidebar {
+    position: fixed;
+    z-index: 200;
+    inset: 0 auto 0 0;
+    transform: translateX(-100%);
+    transition: 0.25s;
+    box-shadow: 10px 0 30px #00000015;
+  }
+
+  .donor-sidebar.show-sidebar {
+    transform: translateX(0);
+  }
+
+  .mobile-menu,
+  .mobile-close {
+    display: grid;
+    place-items: center;
+    border: none;
+    background: transparent;
+    color: #c62828;
+    padding: 5px;
+  }
+
+  .mobile-close {
+    margin-left: auto;
+  }
+
+  .donor-main {
+    padding: 0 17px;
+  }
+
+  .dashboard-header {
+    min-height: 75px;
+  }
+
+  .header-profile > div:last-child {
+    display: none;
+  }
+
+  .donor-welcome {
+    padding: 24px 20px;
+  }
+
+  .donor-welcome h1 {
+    font-size: 21px;
+  }
+
+  .welcome-blood-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .donor-profile-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .availability-box {
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+
+  .request-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-card {
+    flex-wrap: wrap;
+  }
+
+  .activity-date {
+    margin-left: 58px;
+  }
+}
+
+@media (max-width: 480px) {
+  .donor-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .donor-welcome h1 {
+    font-size: 18px;
+  }
+
+  .welcome-blood-icon {
+    display: none;
+  }
+
+  .section-title-row h2 {
+    font-size: 15px;
+  }
+
+  .verified-status {
+    margin-left: 58px;
+  }
+}

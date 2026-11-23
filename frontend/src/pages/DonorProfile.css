@@ -1,0 +1,223 @@
+.donor-profile-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 35px 7%;
+  color: #1e293b;
+}
+
+.profile-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+
+.profile-heading h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.profile-heading p {
+  color: #64748b;
+}
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 13px;
+  padding: 25px;
+}
+
+.profile-sidebar {
+  text-align: center;
+  height: fit-content;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.profile-sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.profile-sidebar > p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.profile-blood-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: #dc2626;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.profile-availability {
+  display: inline-block;
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.profile-availability.available {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.profile-availability.unavailable {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.profile-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.profile-section-heading h2 {
+  font-size: 21px;
+  margin-bottom: 7px;
+}
+
+.profile-section-heading p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.profile-edit-btn,
+.profile-save-btn,
+.profile-cancel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: none;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-edit-btn,
+.profile-save-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.profile-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.profile-field label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.profile-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0 12px;
+}
+
+.profile-input-wrapper svg {
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.profile-input-wrapper input,
+.profile-input-wrapper select {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #1e293b;
+}
+
+.profile-input-wrapper input:disabled,
+.profile-input-wrapper select:disabled,
+.profile-availability-select:disabled {
+  color: #64748b;
+  opacity: 1;
+}
+
+.profile-availability-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.profile-form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.profile-cancel-btn {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.profile-safety-note {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+@media (max-width: 850px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .donor-profile-page {
+    padding: 25px 5%;
+  }
+
+  .profile-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

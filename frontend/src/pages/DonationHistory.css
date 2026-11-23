@@ -1,0 +1,217 @@
+.donation-history-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 40px 7%;
+  color: #1e293b;
+}
+
+.history-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  text-decoration: none;
+  margin-bottom: 25px;
+}
+
+.history-heading h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.history-heading p {
+  color: #64748b;
+}
+
+.history-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.history-stat-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 23px;
+}
+
+.history-stat-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.history-stat-card h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.history-stat-card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.history-toolbar {
+  margin-bottom: 25px;
+}
+
+.history-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  padding: 0 14px;
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+
+.history-search svg {
+  color: #94a3b8;
+}
+
+.history-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 13px 0;
+}
+
+.history-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.history-filters button {
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  padding: 9px 18px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.history-filters .active-history-filter {
+  background: #dc2626;
+  color: white;
+  border-color: #dc2626;
+}
+
+.history-record-card {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 23px;
+  margin-bottom: 15px;
+}
+
+.history-record-icon {
+  width: 52px;
+  height: 52px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-record-info {
+  flex: 1;
+}
+
+.history-record-info h3 {
+  font-size: 17px;
+  margin-bottom: 7px;
+}
+
+.history-record-info p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.history-record-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 13px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.history-status {
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.history-status.verified {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.history-status.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.history-status.rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.empty-history {
+  text-align: center;
+  background: white;
+  padding: 50px 20px;
+  border-radius: 12px;
+  color: #64748b;
+}
+
+.empty-history h3 {
+  color: #1e293b;
+  margin: 12px 0 8px;
+}
+
+.history-note {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13px;
+  margin-top: 25px;
+}
+
+@media (max-width: 700px) {
+  .donation-history-page {
+    padding: 25px 5%;
+  }
+
+  .history-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .history-record-card {
+    flex-wrap: wrap;
+  }
+
+  .history-status {
+    margin-left: 68px;
+  }
+}

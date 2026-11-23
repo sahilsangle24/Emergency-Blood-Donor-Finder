@@ -1,0 +1,290 @@
+.create-request-page {
+  min-height: 100vh;
+  background: #f7f8fc;
+}
+
+.create-request-header {
+  height: 78px;
+  padding: 0 8%;
+  background: white;
+  border-bottom: 1px solid #eceef2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-request-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #c62828;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.requester-back-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #667085;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.create-request-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 45px 20px 60px;
+}
+
+.create-request-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.create-heading-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 17px;
+  display: grid;
+  place-items: center;
+  background: #fee2e2;
+  color: #c62828;
+  border-radius: 16px;
+}
+
+.create-request-heading > span {
+  color: #c62828;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.create-request-heading h1 {
+  font-size: 35px;
+  margin: 12px 0;
+  color: #172033;
+}
+
+.create-request-heading p {
+  color: #87909f;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.blood-request-form {
+  padding: 35px;
+  background: white;
+  border: 1px solid #eceef2;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px #00000008;
+}
+
+.request-form-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #eceef2;
+}
+
+.request-form-title h2 {
+  font-size: 20px;
+}
+
+.request-form-title p {
+  color: #929aaa;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.request-form-title > span {
+  font-size: 11px;
+  color: #c62828;
+  font-weight: 700;
+}
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0 20px;
+  color: #c62828;
+}
+
+.form-section-title h3 {
+  font-size: 15px;
+  color: #172033;
+}
+
+.request-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.request-field label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #475467;
+}
+
+.request-field input,
+.request-field select,
+.request-field textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  color: #172033;
+  background: white;
+}
+
+.request-field input:focus,
+.request-field select:focus,
+.request-field textarea:focus {
+  border-color: #c62828;
+  box-shadow: 0 0 0 3px #c6282812;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.request-input-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #e4e7ec;
+  border-radius: 8px;
+  padding: 0 12px;
+  color: #929aaa;
+}
+
+.request-input-icon input,
+.request-input-icon textarea {
+  border: none;
+  box-shadow: none !important;
+  outline: none;
+}
+
+.request-input-icon:focus-within {
+  border-color: #c62828;
+}
+
+.request-input-icon textarea {
+  resize: vertical;
+  padding: 14px 0;
+}
+
+.textarea-icon {
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.request-demo-message {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 8px;
+  padding: 13px;
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+.request-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #eceef2;
+}
+
+.request-form-footer p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #929aaa;
+  font-size: 11px;
+}
+
+.submit-blood-request {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background: #c62828;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.submit-blood-request:hover {
+  background: #991b1b;
+}
+
+.request-medical-note {
+  text-align: center;
+  margin-top: 22px;
+  color: #929aaa;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+  .create-request-header {
+    padding: 0 5%;
+  }
+
+  .create-request-container {
+    padding: 30px 14px;
+  }
+
+  .create-request-heading h1 {
+    font-size: 27px;
+  }
+
+  .blood-request-form {
+    padding: 22px 17px;
+  }
+
+  .request-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: auto;
+  }
+
+  .request-form-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .submit-blood-request {
+    justify-content: center;
+  }
+
+  .request-form-title {
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+.request-privacy-note {
+  margin: 18px 0;
+  padding: 12px 15px;
+  border-left: 3px solid #b91c1c;
+  border-radius: 8px;
+  background: #fff7f7;
+  color: #7f1d1d;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}

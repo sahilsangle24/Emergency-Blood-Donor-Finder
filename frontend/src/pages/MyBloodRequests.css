@@ -1,0 +1,229 @@
+.my-requests-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 40px 7%;
+  color: #1e293b;
+}
+
+.requests-header {
+  margin-bottom: 30px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  text-decoration: none;
+  margin-bottom: 22px;
+}
+
+.requests-header h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.requests-header p {
+  color: #64748b;
+}
+
+.requests-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.request-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  padding: 0 14px;
+  width: 380px;
+}
+
+.request-search input {
+  border: none;
+  outline: none;
+  padding: 13px 0;
+  width: 100%;
+}
+
+.new-request-btn,
+.view-request-btn,
+.cancel-request-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.new-request-btn {
+  background: #dc2626;
+  color: white;
+}
+
+.request-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.request-filters button {
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #475569;
+  padding: 9px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.request-filters .active-filter {
+  background: #dc2626;
+  color: white;
+  border-color: #dc2626;
+}
+
+.request-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 18px;
+}
+
+.request-card-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.blood-group-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #fee2e2;
+  color: #dc2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.request-main-info {
+  flex: 1;
+}
+
+.request-main-info h3 {
+  margin-bottom: 5px;
+}
+
+.request-main-info p,
+.request-details-grid small {
+  color: #64748b;
+}
+
+.request-status {
+  padding: 7px 13px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.request-status.open {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.request-status.fulfilled {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.request-status.cancelled {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.request-details-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  border-top: 1px solid #f1f5f9;
+  border-bottom: 1px solid #f1f5f9;
+  padding: 20px 0;
+  margin: 22px 0;
+}
+
+.request-details-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.request-card-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.view-request-btn {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.view-request-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cancel-request-btn {
+  background: #fff1f2;
+  color: #e11d48;
+}
+
+.no-requests {
+  text-align: center;
+  padding: 50px 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+.no-requests p {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .my-requests-page {
+    padding: 25px 5%;
+  }
+
+  .requests-actions {
+    flex-direction: column;
+  }
+
+  .request-search {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .request-details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .request-card-top {
+    flex-wrap: wrap;
+  }
+}

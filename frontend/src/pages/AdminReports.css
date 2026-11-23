@@ -1,0 +1,303 @@
+.admin-reports-page {
+  min-height: 100vh;
+  padding: 30px 5%;
+  background: #f5f7fb;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+}
+
+.reports-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  color: #475569;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.reports-back:hover {
+  color: #dc2626;
+}
+
+.reports-heading {
+  margin-bottom: 28px;
+}
+
+.reports-heading h1 {
+  margin: 0 0 8px;
+  color: #172554;
+  font-size: 30px;
+}
+
+.reports-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+.reports-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.report-stat-card {
+  padding: 22px;
+  background: #fff;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.report-stat-card svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 12px;
+  color: #dc2626;
+}
+
+.report-stat-card h2 {
+  margin: 0 0 5px;
+  color: #172554;
+  font-size: 27px;
+}
+
+.report-stat-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.reports-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 22px;
+  margin-bottom: 22px;
+}
+
+.report-panel {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #edf0f5;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.report-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.report-panel-heading h2 {
+  margin: 0 0 7px;
+  color: #172554;
+  font-size: 19px;
+}
+
+.report-panel-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.report-panel-heading > svg {
+  color: #dc2626;
+  width: 24px;
+  height: 24px;
+}
+
+.monthly-chart {
+  height: 220px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 10px 5px;
+  border-bottom: 1px solid #e2e8f0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 49px,
+    #edf0f5 50px
+  );
+}
+
+.chart-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  justify-content: flex-end;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  height: 170px;
+}
+
+.chart-bar {
+  width: 15px;
+  min-height: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.requests-bar {
+  background: #dc2626;
+}
+
+.donations-bar {
+  background: #16a34a;
+}
+
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.chart-legend span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.chart-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.legend-request {
+  background: #dc2626;
+}
+
+.legend-donation {
+  background: #16a34a;
+}
+
+.blood-group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.blood-group-item {
+  display: grid;
+  grid-template-columns: 45px 1fr 30px;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.blood-group-item strong {
+  color: #334155;
+}
+
+.blood-group-item span {
+  color: #64748b;
+  text-align: right;
+}
+
+.blood-progress {
+  height: 9px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #f1f5f9;
+}
+
+.blood-progress div {
+  height: 100%;
+  border-radius: 20px;
+  background: #dc2626;
+}
+
+.location-report {
+  margin-bottom: 22px;
+}
+
+.city-report-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.city-report-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #edf0f5;
+  border-radius: 9px;
+}
+
+.city-report-grid strong {
+  color: #172554;
+  font-size: 15px;
+}
+
+.city-report-grid span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.reports-note {
+  margin-top: 18px;
+  padding: 13px 16px;
+  background: #fff7ed;
+  border-left: 4px solid #f97316;
+  border-radius: 6px;
+  color: #9a3412;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 950px) {
+  .reports-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reports-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .city-report-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .admin-reports-page {
+    padding: 20px 15px;
+  }
+
+  .reports-heading h1 {
+    font-size: 24px;
+  }
+
+  .reports-stats,
+  .city-report-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .report-panel {
+    padding: 17px;
+  }
+
+  .chart-bar {
+    width: 11px;
+  }
+}
