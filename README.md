@@ -1,101 +1,101 @@
 
 # 🩸 Emergency Blood Donor Finder
 
-A full-stack web application designed to connect people in need of blood with compatible blood donors during emergencies.
+A full-stack web application built to connect blood donors with people who need blood during emergencies. The platform allows requesters to find compatible donors, create emergency blood requests, and track responses, while donors can manage their profiles and donation history.
 
 ## 🚀 Project Overview
 
-Emergency Blood Donor Finder helps requesters search for compatible blood donors, create emergency blood requests, and track donor responses. Donors can manage their profiles, availability, invitations, and donation history. Administrators can manage users, requests, donations, and application settings.
+Emergency Blood Donor Finder aims to simplify the blood donation process by providing a centralized platform for donors, requesters, and administrators.
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-**Frontend**
+### Frontend
 - React.js 19
 - JavaScript
 - HTML5
 - CSS3
 - Vite
 
-**Backend**
+### Backend
 - Core Java 21
 - Java Servlets
 - JDBC
 - MVC Architecture
 
-**Database**
+### Database
 - Oracle Database 26ai Free
 
-**Server & Tools**
+### Tools & Server
 - Apache Tomcat 9
 - Apache Maven
-- Git & GitHub
 - Eclipse IDE
 - VS Code
+- Git & GitHub
 
-## ✨ Features
+## ✨ Key Features
 
-### 👤 Authentication
-- User Registration
-- User Login and Logout
-- Role-Based Access
+### 👤 Authentication Module
+- User Registration and Login
+- Role-Based Authentication
 - Secure Password Hashing
+- Session Management
 
 ### 🩸 Donor Module
 - Donor Profile Management
 - Update Blood Group and Location
-- Manage Availability
+- Manage Donor Availability
 - View Blood Requests
-- Accept or Reject Requests
-- Donation History
+- Accept or Reject Blood Requests
+- View Donation History
 
 ### 🏥 Requester Module
 - Requester Dashboard
 - Search Compatible Blood Donors
 - Create Emergency Blood Requests
 - Send Donor Invitations
-- Track Request Status
+- Track Blood Request Status
 - View Donor Responses
 
 ### 🛡️ Admin Module
 - Admin Dashboard
-- Manage Users
-- Manage Donors
+- Manage Donors and Requesters
 - Manage Blood Requests
 - Verify Donation History
-- Manage Application Settings
+- Manage User Accounts
 - View Reports and Statistics
+- Manage Application Settings
 
 ### 🔔 Additional Features
 - In-App Notifications
 - Blood Group Compatibility
 - Request Tracking
-- Session Management
-- Protected Routes
+- Protected Application Routes
+- Server-Side Authorization
 
-## 📸 Screenshots
+## 📸 Application Screenshots
 
-### Application Overview
-![Application Overview](screenshots/00-all-pages-overview.png)
+### 1. Application Overview
+![Application Overview](screenshot/00-all-pages-overview.png)
 
-### Login & Registration
-![Login and Registration](screenshots/01-login-registration.png)
+### 2. Login & Registration
+![Login and Registration](screenshot/01-login-registration.png)
 
-### Donor Dashboard
-![Donor Dashboard](screenshots/02-donor-dashboard.png)
+### 3. Donor Dashboard
+![Donor Dashboard](screenshot/02-donor-dashboard.png)
 
-### Requester Dashboard
-![Requester Dashboard](screenshots/03-requester-dashboard.png)
+### 4. Requester Dashboard
+![Requester Dashboard](screenshot/03-requester-dashboard.png)
 
-### Admin Dashboard
-![Admin Dashboard](screenshots/04-admin-dashboard.png)
+### 5. Admin Dashboard
+![Admin Dashboard](screenshot/04-admin-dashboard.png)
 
-### Donor Search
-![Donor Search](screenshots/05-donor-search.png)
+### 6. Donor Search
+![Donor Search](screenshot/05-donor-search.png)
 
-### Blood Request Form
-![Blood Request Form](screenshots/06-blood-request-form.png)
+### 7. Blood Request Form
+![Blood Request Form](screenshot/06-blood-request-form.png)
 
-*Screenshots are illustrative UI mockups with sample data, not verified live application captures.*
+*Note: These are illustrative UI mockups with sample data, not screenshots of verified live application functionality.*
 
 ## 📂 Project Structure
 
@@ -113,33 +113,32 @@ EmergencyBloodDonorFinder/
 ├── frontend/
 │   └── React Application
 │
+├── screenshot/
+│   ├── 00-all-pages-overview.png
+│   ├── 01-login-registration.png
+│   ├── 02-donor-dashboard.png
+│   ├── 03-requester-dashboard.png
+│   ├── 04-admin-dashboard.png
+│   ├── 05-donor-search.png
+│   └── 06-blood-request-form.png
+│
 ├── src/
 │   └── main/
 │       ├── java/com/ebdf/
-│       │   ├── controller/
-│       │   ├── dao/
-│       │   ├── model/
-│       │   ├── service/
-│       │   └── filter/
-│       │
 │       ├── resources/
-│       │   └── db.properties
-│       │
 │       └── webapp/
-│           └── WEB-INF/
 │
-├── screenshots/
 ├── pom.xml
 ├── build-and-package.bat
 ├── build-and-package.ps1
 └── README.md
 ```
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation and Setup
 
 ### 1. Prerequisites
 
-Install the following:
+Install the following software:
 
 - JDK 21
 - Node.js and npm
@@ -148,13 +147,11 @@ Install the following:
 - Apache Tomcat 9
 - Eclipse IDE
 
-### 2. Clone Repository
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/sahilsangle24/Emergency-Blood-Donor-Finder.git
 ```
-
-Navigate into the project:
 
 ```bash
 cd Emergency-Blood-Donor-Finder
@@ -162,24 +159,24 @@ cd Emergency-Blood-Donor-Finder
 
 ### 3. Configure Oracle Database
 
-Create the application user using the provided SQL script if it does not already exist.
+Connect to Oracle Database using SQL*Plus.
+
+Create the application user if it does not already exist:
 
 ```sql
 @database/00_create_app_user.sql
 ```
 
-Connect to the `FREEPDB1` database as `EBDF_APP`, then execute:
+Connect to the FREEPDB1 database as EBDF_APP and execute:
 
 ```sql
 @database/00_install_or_upgrade.sql
 @database/03_verify_installation.sql
 ```
 
-The database includes tables for users, donors, requesters, blood requests, donor responses, notifications, donation history, and other application data.
-
 ### 4. Configure Database Connection
 
-Set the following environment variables in PowerShell:
+Set the database environment variables in PowerShell:
 
 ```powershell
 $env:EBDF_DB_URL = "jdbc:oracle:thin:@//localhost:1521/FREEPDB1"
@@ -188,9 +185,9 @@ $env:EBDF_DB_PASSWORD = "YOUR_DATABASE_PASSWORD"
 $env:EBDF_DB_DRIVER = "oracle.jdbc.OracleDriver"
 ```
 
-Do not upload your actual database password to GitHub.
+Never upload actual database credentials to GitHub.
 
-### 5. Run Frontend
+### 5. Run React Frontend
 
 ```bash
 cd frontend
@@ -198,47 +195,47 @@ npm ci
 npm run dev
 ```
 
-Open the Vite URL displayed in your terminal, normally:
+Open:
 
 ```text
 http://localhost:5173
 ```
 
-### 6. Build Backend
+### 6. Build Java Backend
 
-Return to the project root and run:
+Return to the project root:
 
 ```powershell
 .\build-and-package.ps1
 ```
 
-Or:
+Alternatively:
 
 ```bash
 mvn clean package
 ```
 
-The generated WAR file is:
+### 7. Deploy on Apache Tomcat 9
+
+The generated WAR file:
 
 ```text
 target/EmergencyBloodDonorFinder.war
 ```
 
-### 7. Deploy on Apache Tomcat 9
+Deploy it to Tomcat's `webapps` directory and start the server.
 
-Copy the WAR file into Tomcat's `webapps` directory.
-
-Start Tomcat and access:
+Application URL:
 
 ```text
 http://localhost:8086/EmergencyBloodDonorFinder/
 ```
 
-Use the port configured in your Tomcat server.
+Use the port configured in your Tomcat installation.
 
 ## 🔗 Backend API Modules
 
-| API Endpoint | Purpose |
+| API Endpoint | Description |
 |---|---|
 | `/api/register` | User Registration |
 | `/api/login` | User Login |
@@ -257,24 +254,24 @@ Use the port configured in your Tomcat server.
 
 ## 🔐 Security
 
-- BCrypt password hashing
+- BCrypt Password Hashing
 - Role-Based Authorization
 - Server-Side Session Management
 - Protected API Endpoints
 - User Ownership Validation
 - Secure Session Cookies
 
-## 🧪 Project Testing Status
+## 🧪 Development and Testing Status
 
-- Oracle schema installation and verification: Completed locally.
+- Oracle database schema installation: Completed locally.
+- Required database tables and reference data verification: Completed locally.
 - Maven WAR packaging: Successful.
 - React production assets included in WAR: Verified.
 - Full Tomcat deployment and end-to-end integration testing: In progress.
 
-## 🎯 Future Enhancements
+## 🔮 Future Enhancements
 
 - Email and SMS Notifications
-- Live Donor Location Tracking
 - Google Maps Integration
 - Real-Time Notifications
 - Mobile Application
@@ -286,7 +283,7 @@ Use the port configured in your Tomcat server.
 
 GitHub: [@sahilsangle24](https://github.com/sahilsangle24)
 
-Project: [Emergency Blood Donor Finder](https://github.com/sahilsangle24/Emergency-Blood-Donor-Finder)
+Project Repository: [Emergency Blood Donor Finder](https://github.com/sahilsangle24/Emergency-Blood-Donor-Finder)
 
 ---
 
